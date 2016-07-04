@@ -68,7 +68,7 @@ public class PrintArray {
      */
     private static <T> void print(T[] array, int start, int end) throws
             InvalidSubscriptException {
-        if (start < 0 || start > end || array.length <= end)
+        if (start < 0 || start > end || end >= array.length)
             throw new InvalidSubscriptException();
 
         for (int i = start; i <= end; i++) 
